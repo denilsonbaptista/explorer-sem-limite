@@ -7,16 +7,16 @@
 :root {
   --ff-text: "Mulish", sans-serif;
 
+  --bg-section: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+  --bg-moon: #ffffff;
+
   font-size: 62.5%;
   --fc-pink: #b52184;
   --fc-blue-dark: #312d64;
 }
 
-.page {
-  max-width: 43rem;
-
+body {
   margin: 0 auto;
-  padding: 0 3.2rem;
 
   font-family: var(--ff-text);
 }
@@ -53,3 +53,43 @@ p {
   margin-bottom: 3.5rem;
 }
 
+#home a img {
+  margin-bottom: 9.3rem;
+}
+
+#information {
+  padding: 5.2rem 3.9rem;
+
+  background: var(--bg-section);
+
+  display: flex;
+  flex-direction: column;
+  gap: 4.9rem;
+}
+
+#information .moon {
+  padding: 2.6rem;
+
+  box-shadow: 0px 3.31077px 13.2431px rgba(0, 0, 0, 0.25);
+  border-radius: 19.8646px;
+  background: var(--bg-moon);
+}
+
+#information .moon img {
+  width: 8rem;
+  margin-bottom: 3rem;
+}
+
+#information .moon h2 {
+  font-weight: 900;
+  font-size: 29.2193px;
+  line-height: 37px;
+
+  margin-bottom: 2rem;
+}
+
+#information .moon p {
+  font-weight: 600;
+  font-size: 16.0416px;
+  line-height: 20px;
+}
