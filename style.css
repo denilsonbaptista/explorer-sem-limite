@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-text: "Mulish", sans-serif;
+
+  font-size: 62.5%;
+  --fc-pink: #b52184;
+  --fc-blue-dark: #312d64;
+}
+
+.page {
+  max-width: 43rem;
+
+  margin: 0 auto;
+  padding: 0 3.2rem;
+
+  font-family: var(--ff-text);
+}
+
+h1,
+h2 {
+  color: var(--fc-pink);
+}
+
+p {
+  color: var(--fc-blue-dark);
+}
+
+#home {
+  text-align: center;
+}
+
+#home img {
+  max-width: 36.4rem;
+  margin-bottom: 1.7rem;
+}
+
+#home h1 {
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+#home p {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+
+  margin-bottom: 3.5rem;
+}
+
