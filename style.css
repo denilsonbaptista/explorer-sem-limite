@@ -21,6 +21,11 @@
   --fc-white: #ffffff;
 }
 
+html {
+  /* chrome://flags/#smooth-scrolling */
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto;
 
@@ -196,4 +201,21 @@ p {
 
 #contact form button:hover {
   background: var(--bg-linear-gradiente-hover);
+}
+
+footer {
+  text-align: center;
+
+  background: var(--bg-linear-gradient);
+  padding: 3.2rem 3.9rem;
+}
+
+footer a {
+  font-family: var(--ff-text);
+  font-weight: 600;
+  font-size: 1.9rem;
+  line-height: 2.4rem;
+  
+  text-decoration: none;
+  color: var(--fc-white);
 }
