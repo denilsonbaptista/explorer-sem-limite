@@ -232,6 +232,33 @@ footer a {
   display: none;
 }
 
+/* Scroll */
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-right: 10px;
+}
+
+/* Fundo do scrollbar */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border: none;
+}
+
+/* Cor do scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: var(--fc-blue-dark);
+  border-radius: 3px;
+  cursor: move;
+}
+
+/* Cor do scrollbar quando hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--fc-blue-dark);
+}
+
+
 @media (min-width: 1200px) {
   html {
     position: relative;
@@ -280,6 +307,21 @@ footer a {
     gap: 6rem;
 
     padding: 6.4rem 3.9rem;
+  }
+
+  #information .wrapper .moon img {
+    width: 9.7rem;
+    margin-bottom: 4rem;
+  }
+
+  #information .wrapper .moon h2 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+
+  #information .wrapper .moon p {
+    font-size: 1.9rem;
+    line-height: 2.4rem;
   }
 
   #contact .wrapper form {
