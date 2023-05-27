@@ -41,22 +41,28 @@ p {
   color: var(--fc-blue-dark);
 }
 
-#home {
+.wrapper {
+  max-width: 121rem;
+  margin: 0 auto;
+}
+
+#home .wrapper {
+  padding: 0 3.9rem;
   text-align: center;
 }
 
-#home img {
-  max-width: 36.4rem;
+#home .wrapper img {
+  max-width: 100%;
   margin-bottom: 1.7rem;
 }
 
-#home h1 {
+#home .wrapper h1 {
   font-weight: 900;
   font-size: 3.2rem;
   line-height: 4rem;
 }
 
-#home p {
+#home .wrapper p {
   font-weight: 600;
   font-size: 2rem;
   line-height: 2.5rem;
@@ -64,21 +70,23 @@ p {
   margin-bottom: 3.5rem;
 }
 
-#home a img {
+#home .wrapper a img {
   margin-bottom: 9.3rem;
 }
 
 #information {
-  padding: 5.2rem 3.9rem;
-
   background: var(--bg-linear-gradient);
+}
+
+#information .wrapper {
+  padding: 5.2rem 3.9rem;
 
   display: flex;
   flex-direction: column;
   gap: 4.9rem;
 }
 
-#information .moon {
+#information .wrapper .moon {
   padding: 2.6rem;
 
   box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.25);
@@ -86,12 +94,12 @@ p {
   background: var(--bg-moon);
 }
 
-#information .moon img {
+#information .wrapper .moon img {
   width: 8rem;
   margin-bottom: 3rem;
 }
 
-#information .moon h2 {
+#information .wrapper .moon h2 {
   font-weight: 900;
   font-size: 2.9rem;
   line-height: 3.7rem;
@@ -99,21 +107,21 @@ p {
   margin-bottom: 2rem;
 }
 
-#information .moon p {
+#information .wrapper .moon p {
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 2rem;
 }
 
-#contact {
+#contact .wrapper {
   padding: 7.8rem 3.9rem 6.5rem;
 }
 
-#contact form fieldset {
+#contact .wrapper form fieldset {
   border: none;
 }
 
-#contact form legend {
+#contact .wrapper form legend {
   font-family: var(--ff-text);
   font-weight: 900;
   font-size: 3.2rem;
@@ -124,13 +132,13 @@ p {
   margin-bottom: 4.3rem;
 }
 
-#contact form .input-wrappers {
+#contact .wrapper form .input-wrappers {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
 }
 
-#contact form .input-wrapper {
+#contact .wrapper form .input-wrapper {
   display: flex;
   align-items: center;
   gap: 1.2rem;
@@ -142,11 +150,11 @@ p {
 }
 
 /* :focus-within seleciona o elemento pai que contém o elemento em foco. */
-#contact form .input-wrapper:focus-within {
+#contact .wrapper form .input-wrapper:focus-within {
   border: 1.6px solid var(--fc-pink);
 }
 
-#contact form .input-wrapper input {
+#contact .wrapper form .input-wrapper input {
   width: 100%;
 
   font-family: var(--ff-text);
@@ -159,11 +167,11 @@ p {
   border: 0px;
 }
 
-#contact form .input-wrapper input:focus {
+#contact .wrapper form .input-wrapper input:focus {
   outline: 0px;
 }
 
-#contact form .input-wrapper textarea {
+#contact .wrapper form .input-wrapper textarea {
   width: 100%;
   height: 9.8rem;
 
@@ -178,11 +186,11 @@ p {
   color: var(--fc-blue-dark);
 }
 
-#contact form .input-wrapper textarea:focus {
+#contact .wrapper form .input-wrapper textarea:focus {
   outline: 0px;
 }
 
-#contact form button {
+#contact .wrapper form button {
   width: 15.1rem;
 
   padding: 1.5rem;
@@ -199,7 +207,7 @@ p {
   cursor: pointer;
 }
 
-#contact form button:hover {
+#contact .wrapper form button:hover {
   background: var(--bg-linear-gradiente-hover);
 }
 
@@ -215,7 +223,84 @@ footer a {
   font-weight: 600;
   font-size: 1.9rem;
   line-height: 2.4rem;
-  
+
   text-decoration: none;
   color: var(--fc-white);
+}
+
+.stars img {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  html {
+    position: relative;
+  }
+
+  #home .wrapper {
+    display: grid;
+    grid-template-areas: "A B";
+    gap: 2rem;
+  }
+
+  #home .wrapper .col-2 {
+    grid-area: B;
+
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #home .wrapper .col-1 {
+    grid-area: A;
+
+    padding-top: 30rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #home .wrapper h1 {
+    font-size: 4.5rem;
+    line-height: 7rem;
+  }
+
+  #home .wrapper .col-2 img {
+    margin-bottom: 10rem;
+  }
+
+  #home .wrapper p {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 15rem;
+  }
+
+  #information .wrapper {
+    flex-direction: row;
+    gap: 6rem;
+
+    padding: 6.4rem 3.9rem;
+  }
+
+  #contact .wrapper form {
+    max-width: 54rem;
+  }
+
+  footer {
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+
+    padding: 3.2rem 3.9rem;
+  }
+
+  .stars img {
+    display: initial;
+    position: absolute;
+    bottom: 8.7rem;
+    right: 0;
+
+    width: 45%;
+    max-height: 99rem;
+    z-index: -1;
+  }
 }

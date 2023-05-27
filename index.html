@@ -18,69 +18,79 @@
 
 <body>
   <section id="home">
-    <img src="./assets/astronaut-in-space.png"
-      alt="Um astronauta no espaço com seu trage e luas das cores vermelhas, amarelas e azuis">
+    <div class="wrapper">
+      <div class="col-2">
+        <img src="./assets/astronaut-in-space.png"
+          alt="Um astronauta no espaço com seu trage e luas das cores vermelhas, amarelas e azuis">
+      </div>
 
-    <h1>Explore sem limites</h1>
-    <p>Porque o aprendizado é contínuo</p>
+      <div class="col-1">
+        <h1>Explore sem limites</h1>
+        <p>Porque o aprendizado é contínuo</p>
 
-    <a href="#contact">
-      <img src="./assets/button-down.svg"
-        alt="Uma circunferência num formato de um retangula na vertical com uma seta apontando para baixo">
-    </a>
+        <a href="#contact">
+          <img src="./assets/button-down.svg"
+            alt="Uma circunferência num formato de um retangula na vertical com uma seta apontando para baixo">
+        </a>
+      </div>
+    </div>
   </section>
 
   <section id="information">
-    <div class="moon">
-      <img src="./assets/moon-yellow.png" alt="Lua amarela">
+    <div class="wrapper">
+      <div class="moon">
+        <img src="./assets/moon-yellow.png" alt="Lua amarela">
 
-      <h2>Não pare nunca</h2>
-      <p>Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca".
-        Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.</p>
-    </div>
-    <div class="moon">
-      <img src="./assets/moon-blue.png" alt="Lua amarela">
+        <h2>Não pare nunca</h2>
+        <p>Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca".
+          Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.</p>
+      </div>
+      <div class="moon">
+        <img src="./assets/moon-blue.png" alt="Lua amarela">
 
-      <h2>Só volta</h2>
-      <p>Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. Às
-        vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.</p>
-    </div>
-    <div class="moon">
-      <img src="./assets/moon-red.png" alt="Lua amarela">
+        <h2>Só volta</h2>
+        <p>Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. Às
+          vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.</p>
+      </div>
+      <div class="moon">
+        <img src="./assets/moon-red.png" alt="Lua amarela">
 
-      <h2>Siga seu ritmo</h2>
-      <p>Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir. Mesmo pequenos
-        passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo
-        final.</p>
+        <h2>Siga seu ritmo</h2>
+        <p>Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir. Mesmo pequenos
+          passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo
+          final.</p>
+      </div>
     </div>
   </section>
 
   <section id="contact">
-    <form action="#">
-      <fieldset>
-        <legend>Entre em contato</legend>
+    <div class="wrapper">
+      <form action="#">
+        <fieldset>
+          <legend>Entre em contato</legend>
 
-        <div class="input-wrappers">
-          <div class="input-wrapper">
-            <label for="name">
-              <img src="./assets/icon-person.svg" alt="icone de uma pessoa">
-            </label>
-            <input type="text" name="name" id="name" placeholder="Seu nome">
-          </div>
-          <div class="input-wrapper">
-            <label for="email">
-              <img src="./assets/icon-at.svg" alt="icone de um arroba">
-            </label>
-            <input type="email" name="email" id="email" placeholder="Email">
-          </div>
-          <div class="input-wrapper">
-            <textarea name="message" id="message" placeholder="Digite sua mensagem aqui..."></textarea>
-          </div>
+          <div class="input-wrappers">
+            <div class="input-wrapper">
+              <label for="name">
+                <img src="./assets/icon-person.svg" alt="icone de uma pessoa">
+              </label>
+              <input type="text" name="name" id="name" placeholder="Seu nome">
+            </div>
+            <div class="input-wrapper">
+              <label for="email">
+                <img src="./assets/icon-at.svg" alt="icone de um arroba">
+              </label>
+              <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="input-wrapper">
+              <textarea name="message" id="message" placeholder="Digite sua mensagem aqui..."></textarea>
+            </div>
 
-          <button>Enviar Mensagem</button>
-        </div>
-      </fieldset>
-    </form>
+            <button>Enviar Mensagem</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
   </section>
 
   <footer>
@@ -88,6 +98,10 @@
       © 2023 - Rocketseat Explorer
     </a>
   </footer>
+
+  <div class="stars">
+    <img src="./assets/bg-contact.png" alt="">
+  </div>
 
   <script src="/main.js"></script>
 </body>
