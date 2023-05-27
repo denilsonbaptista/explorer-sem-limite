@@ -51,9 +51,11 @@ p {
   text-align: center;
 }
 
-#home .wrapper img {
+#home .wrapper .col-2 img {
   max-width: 100%;
   margin-bottom: 1.7rem;
+
+  animation: topdown 800ms;
 }
 
 #home .wrapper h1 {
@@ -258,6 +260,17 @@ footer a {
   background-color: var(--fc-blue-dark);
 }
 
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 @media (min-width: 1200px) {
   html {
@@ -294,6 +307,8 @@ footer a {
 
   #home .wrapper .col-2 img {
     margin-bottom: 10rem;
+
+    animation: topdown 800ms;
   }
 
   #home .wrapper p {
